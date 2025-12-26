@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text antialiased;
+  }
+  
+  /* Hide footer during intro animation */
+  body[data-intro-active="true"] footer {
+    display: none;
+  }
+}
+
